@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join our club!</title>
+</head>
+<body>
+<header>
+        <h1>🐾Join the Pet Lover Club!</h1>
+        <p>We would love to hear all about your animal.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="pet.html">Meet the pets</a> |
+            <a href="pet_comparison.html">Pet Comparison</a> |
+        </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Become a Member!</h2>
+
+        <p>Fill the form below to tell us about yourself and your love
+        for animals.</p>
+
+        <form>
+            <fieldset>
+                <legend>ABOUT YOU</legend>
+
+<p>
+                    <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname"
+                      required>
+</p>
+
+<p>
+                    <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email"
+                      required>
+</p>
+            </fieldset>
+
+        </form>
+    </section>
+
+    <section>
+ <form>
+        <fieldset>
+            <legend>Your Favourite Pet</legend>
+
+            <p>
+                <label for="favourite-pet">Which is your favourite pet?</label><br>
+                <select id="favourite-pet" name="favourite-pet" required>
+                    <option value="">---Choose a pet---</option>
+                   <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bunny">Bunny</option>
+                    <option value="fish">Fish</option></select>
+
+            </p>
+
+            <p>Which pets do you own?</p><br>
+
+            <input type="checkbox" id="dog-own" name="pets[]" value="dog">
+            <label for="dog-own">Dog</label><br>
+
+            <input type="checkbox" id="cat-own" name="pets[]" value="cat">
+            <label for="cat-own">Cat</label><br>
+
+
+            <input type="checkbox" id="bunny-own" name="pets[]" value="bunny">
+            <label for="bunny-own">Bunny</label><br>
+
+                <input type="checkbox" id="fish-own" name="pets[]" value="fish">
+            <label for="fish-own">Fish</label><br>
+        </fieldset>
+    </section>
+
+    <section>
+         <fieldset>
+            <legend>Your pet experience </legend>
+
+             <p>How much experience do you have caring for pets?</p>
+
+             <input type="radio" id="beginner" name="experience"
+                    value="beginner" required>
+             <label for="beginner">Beginner</label><br>
+
+              <input type="radio" id="some-experience" name="experience"
+                    value="some-experience" required>
+             <label for="some-experience">Some experience</label><br>
+
+
+              <input type="radio" id="experienced" name="experience"
+                    value="experienced" required>
+             <label for="experienced">Experienced</label><br>
+         </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend>
+                Tell Us More
+            </legend>
+
+            <p>
+                <label for="reason">Why do you love animals?</label><br>
+                <textarea id="reason" name="reason" rows="5" cols="40"
+                          placeholder="Tell us your story..." ></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Join the club</button>
+            <button type="reset">Clear Form</button>
+        </p>
+        </section>
+</form>
+
+    <hr>
+
+    <footer>
+    <p>© 2026 Pet Lover Club. All rights reserved.</p>
+            <a href="index.html">Back to home</a>
+</footer>
+
+</main>
+</body>
+</html>
